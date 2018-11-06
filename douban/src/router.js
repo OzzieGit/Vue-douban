@@ -1,0 +1,31 @@
+import Vue from "vue";
+import Router from "vue-router";
+import Index from "./views/index.vue";
+import Detail from "./views/detail.vue";
+import Search from "./views/search.vue";
+import List from "./views/list.vue";
+Vue.use(Router);
+
+export default new Router({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: "/",
+      name: "index",
+      component: Index
+    }, {
+      path: "/detail",
+      name: "detail",
+      component: Detail
+    }, {
+      path: "/search",
+      name: "search",
+      component: Search
+    }, {
+      path: "/list",
+      name: "list",
+      component: List
+    }
+  ]
+});
