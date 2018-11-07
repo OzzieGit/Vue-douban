@@ -55,7 +55,10 @@ export default {
       }
     }).catch(err=>{
       Indicator.close();
-      console.log(err)
+      Toast({
+        message: '加载失败',
+        duration: 1000
+      });
     })
   }
 }

@@ -44,6 +44,4 @@ export default {
 #bottom li a.router-link-exact-active span{ color: #E02620; }
 #bottom li a.router-link-exact-active img{ width: 0; height: 0; }
 #bottom li a.router-link-exact-active img.active_img{ width: 0.43rem; height: 0.4rem; }
-
-/* router-link-exact-active active */
 </style>
